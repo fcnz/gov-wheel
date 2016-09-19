@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  background-color: grey;
+}
+
+.breadcrumbs {
+  background-color: green;
+  /*display: inline-block;*/
+}
+
+.wheel {
+  background-color: blue;
+  /*display: inline-block;*/
+}
+
+.content {
+  width: 75%;
+  float: left;
+}
+
+.details {
+  width: 25%;
+  height: 100%;
+  float: right;
+  background-color: red;
+  display: inline-block;
+}
