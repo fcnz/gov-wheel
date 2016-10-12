@@ -10,7 +10,11 @@
 
 .wheel {
   background-color: blue;
-  /*display: inline-block;*/
+  position: absolute;
+  width: 72.4%;
+  bottom: 0;
+  top: 0;
+  margin: 133px 0px 20px 13px;
 }
 
 .content {
@@ -24,4 +28,17 @@
   float: right;
   background-color: red;
   display: inline-block;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.curve-text {
+  font: 12px sans-serif;
+}
+
+.curve-line {
+  stroke: #999;
+  fill: none;
 }
