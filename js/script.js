@@ -8,27 +8,27 @@ var data = [
       "description": 2704659
     },
     {
-      "heading": "B",
+      "heading": "BBBmy name is Megan BBB",
       "description": 4499890
     },
     {
-      "heading": "C",
+      "heading": "CCCCCCCCCCCC",
       "description": 2159981
     },
     {
-      "heading": "D",
+      "heading": "DDDDDDDDDDDDDD",
       "description": 3853788
     },
     {
-      "heading": "E",
+      "heading": "EEEEEEEEEEEEEE",
       "description": 141065
     },
     {
-      "heading": "F",
+      "heading": "FFFFFFFFFFFFF",
       "description": 8819342
     },
     {
-      "heading": "G",
+      "heading": "GGGGGGGGGG",
       "description": 612463
     }
 
@@ -144,8 +144,7 @@ var svg = d3.select(".wheel").append("svg")
 .append("g")
 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-//Here is the for loop that creates each ring
-
+//Here is the for loop that creates each ring. "i" is the number of rings.
 data.forEach(function(ringData, i) {
 
   var svg = d3.select("svg")
@@ -169,13 +168,15 @@ data.forEach(function(ringData, i) {
     .innerRadius(inner)
   }
 
+// setting up for the sections of each ring
   var pie = d3.pie()
   .sort(null)
   .value(function(d) {
     return 1;
   });
 
-  var g = svg.selectAll("g")
+// mapping the heading from ringData to each section
+  var g = svg.selectAll(".arc")
   .data(pie(ringData))
   .enter().append("g")
   .attr("class", "arc");
@@ -205,25 +206,44 @@ data.forEach(function(ringData, i) {
 
     var pathVar = "M " + xStart + " " + yStart + " " + "A " + textRadius + " " + textRadius + " " + 0 + " " + 0 + " " + 1 + " " + xEnd + " " + yEnd;
 
-    svg.select("curve").remove();
+    //svg.select("curve").remove();
 
     svg.append("defs").append("path")
     .attr("id", "curve" + i + j)
     .attr("d", pathVar)
+    // .attr("transform", function(d) {
+    //   return "translate(" + arc.centroid(d) + ")";
+    // })
+
+    var pathEl   = d3.select("#curve" + i + j).node();
+    var pathLength = pathEl.getTotalLength()
+    var midpoint = pathEl.getPointAtLength(pathEl.getTotalLength()/2);
+    console.log(pathLength)
+    console.log(midpoint)
 
     svg.append("text")
+    .attr("x", Math.abs(pathLength/2))
+    .attr("y", Math.abs(pathLength/2))
+
+    // .attr("transform", function(d) {
+    //   return "translate(" + arc.centroid(d) + ")";
+    // })
+    // .attr("transform", function(d) {
+    //   return "translate(" + (midpoint.x - (xStart)) + "," + (midpoint.y - (yStart)) + ")";
+    // })
     .attr("class", "curve-text")
     .attr("dy", ".35em")
-    //.style("text-anchor", "middle")
+    .style("text-anchor", "middle")
     .append("textPath")
     .attr("xlink:href", "#curve" + i + j)
     .text(function(d) {
       return slice.heading;
     });
 
-    svg.append("use")
+    g.append("use")
     .attr("class", "curve-line")
-    .attr("xlink:href", "#curve");
+    .attr("xlink:href", "#curve")
+
 
   });
 
@@ -288,3 +308,7 @@ data.forEach(function(ringData, i) {
   });
 
 });
+
+// setTimeout(function() {
+//   location.reload();
+// }, 3000);
