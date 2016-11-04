@@ -77,10 +77,6 @@ data.forEach(function(ringData, i) {
 
     g.append('use').attr('class', 'curve-line').attr('xlink:href', '#curve');
 
-    d3.selectAll('.curve-text').on('click', function(a) {
-      console.log(a);
-    });
-
     g.on('click', function(element) {
       var _element$data = element.data,
         heading = _element$data.heading,
