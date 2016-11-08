@@ -17,12 +17,12 @@ var svg = d3.select('.wheel')
 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
 //Here is the for loop that creates each ring. 'i' is the number of rings.
-data.forEach(function(ringData, i) {
+data.reverse().forEach(function(ringData, i) {
   var centreX = width / 2 + 15; // Trial and error
   var centreY = height / 2 + 135; // Add distance from edge of page
   var increment = 360 / ringData.length;
-  var outer = radius - 10 - (radius - 50) / data.length * i;
-  var inner = radius - 10 - (radius - 50) / data.length * (i + 1);
+  var outer = radius - 10 - (radius - 100) / data.length * i;
+  var inner = radius - 10 - (radius - 100) / data.length * (i + 1);
 
   var svg = d3.select('svg')
   .attr('width', width)
