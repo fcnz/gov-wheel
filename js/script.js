@@ -4,7 +4,8 @@
 var $wheel = $('.wheel');
 var width = $wheel.width();
 var height = $wheel.height();
-var radius = Math.min(width, height) / 2;
+var radius = Math.min(width, height) / 2 - 40;
+var innerRadius = 60;
 var curAngle = 0;
 
 var color = d3.scaleOrdinal().range(['#ff8c00', '#98abc5', '#a05d56', '#8a89a6', '#7b6888', '#6b486b']);
@@ -16,17 +17,22 @@ var svg = d3.select('.wheel')
 .append('g')
 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
+// Draw arrows to indicate important part of wheel.
+svg.append('polygon')
+.attr('points', '-30,'+-height/2+' 30,'+-height/2+' 0,'+-radius);
+
+svg.append('polygon')
+.attr('points', '-30,'+-(innerRadius-40)+' 30,'+-(innerRadius-40)+' 0,'+-innerRadius)
+
 //Here is the for loop that creates each ring. 'i' is the number of rings.
 data.reverse().forEach(function(ringData, i) {
-  var centreX = width / 2 + 15; // Trial and error
-  var centreY = height / 2 + 135; // Add distance from edge of page
+  var centreX = width / 2 + 23; // Trial and error
+  var centreY = height / 2 + 50; // Add distance from edge of page
   var increment = 360 / ringData.length;
-  var outer = radius - 10 - (radius - 100) / data.length * i;
-  var inner = radius - 10 - (radius - 100) / data.length * (i + 1);
+  var outer = radius - (radius - innerRadius) / data.length * i;
+  var inner = radius - (radius - innerRadius) / data.length * (i + 1);
 
   var svg = d3.select('svg')
-  .attr('width', width)
-  .attr('height', height)
   .append('g')
   .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')  rotate(' + increment / 2 + ')');
 
@@ -78,12 +84,12 @@ data.reverse().forEach(function(ringData, i) {
     g.append('use').attr('class', 'curve-line').attr('xlink:href', '#curve');
 
     g.on('click', function(element) {
-      var _element$data = element.data,
-        heading = _element$data.heading,
-        description = _element$data.description;
+      var _element$data = element.data;
+      var heading = _element$data.heading;
+      var description = _element$data.description;
 
       $('.title').text(heading);
-      $('.description').text(description);
+      $('.description').text(description || 'No Description Available');
     });
   });
 
