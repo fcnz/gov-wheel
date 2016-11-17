@@ -21,9 +21,6 @@ var svg = d3.select('.wheel')
 svg.append('polygon')
 .attr('points', '-30,'+-height/2+' 30,'+-height/2+' 0,'+-radius);
 
-svg.append('polygon')
-.attr('points', '-30,'+-(innerRadius-40)+' 30,'+-(innerRadius-40)+' 0,'+-innerRadius)
-
 //Here is the for loop that creates each ring. 'i' is the number of rings.
 data.reverse().forEach(function(ringData, i) {
   var centreX = width / 2 + 23; // Trial and error
