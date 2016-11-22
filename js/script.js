@@ -93,9 +93,11 @@ data.reverse().forEach(function(ringData, i) {
       var _element$data = element.data;
       var heading = _element$data.heading;
       var description = _element$data.description;
+      var ringDescription = _element$data.ringDescription;
 
       $('.title').text(heading);
       $('.description').text(description || 'No Description Available');
+      $('.ring-description').text(ringDescription || 'No Description Available');
     });
   });
 
