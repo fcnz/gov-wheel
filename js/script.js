@@ -8,7 +8,14 @@ var radius = Math.min(width, height) / 2 - 40;
 var innerRadius = 80;
 var curAngle = 0;
 
-var color = d3.scaleOrdinal().range(['#ff8c00', '#98abc5', '#a05d56', '#8a89a6', '#7b6888', '#6b486b']);
+var color = d3.scaleOrdinal().range([
+  '#FFF1D1',
+  '#C6AACE',
+  '#FFEAB8',
+  '#B68FC2',
+  '#FFE29D',
+  '#A472B4'
+  ]);
 
 var svg = d3.select('.wheel')
 .append('svg')
