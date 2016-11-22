@@ -16,7 +16,26 @@ polygon {
   width: 68%;
   bottom: 0;
   top: 0;
-  margin: 50px 0px 20px 13px;
+  margin: 95px 0px 35px 13px;
+}
+
+ul.principals {
+  list-style: none;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.principals li {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 9px 5px;
+  background-color: #4BB06A;
+  border-radius: 5px;
+  border-color: white;
 }
 
 .content {

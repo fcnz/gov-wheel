@@ -4,7 +4,7 @@
 var $wheel = $('.wheel');
 var width = $wheel.width();
 var height = $wheel.height();
-var radius = Math.min(width, height) / 2 - 40;
+var radius = Math.min(width, height) / 2 - 15;
 var innerRadius = 80;
 var curAngle = 0;
 
@@ -35,7 +35,7 @@ svg.append('text')
 
 // Draw arrows to indicate important part of wheel.
 svg.append('polygon')
-.attr('points', '-30,'+-height/2+' 30,'+-height/2+' 0,'+-radius);
+.attr('points', '-10,'+-height/2+' 10,'+-height/2+' 0,'+-radius);
 
 //Here is the for loop that creates each ring. 'i' is the number of rings.
 data.reverse().forEach(function(ringData, i) {

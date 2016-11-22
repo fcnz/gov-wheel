@@ -3,12 +3,12 @@ var data = [
     {
       heading: 'Federated (Club)',
       description: 'NSO voting members are the local clubs, with regional entities or committees potentially in existence as service centres (Sport NZ, n.d.).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
+      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).'
     },
     {
       heading: 'Unitary',
       description: 'NSO voting members are the individuals, for example, Triathlon NZ, as an events-based organisation, has a structure closely aligned with the unitary model (Sport NZ, n.d.).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
+      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).'
     }
   ],
   [
