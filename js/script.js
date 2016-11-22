@@ -105,6 +105,16 @@ data.reverse().forEach(function(ringData, i) {
       $('.title').text(heading);
       $('.description').text(description || 'No Description Available');
       $('.ring-description').text(ringDescription || 'No Description Available');
+
+      // Populate list
+      var listName = _element$data.listName || "";
+      var list = _element$data.list || [];
+      $('.list-name').text(listName);
+      var $list = $('.list');
+      $list.empty();
+      list.forEach(function(item) {
+        $list.append("<li>"+item+"</li>");
+      });
     });
   });
 
