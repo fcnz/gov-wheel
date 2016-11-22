@@ -3,6 +3,10 @@ body {
   background-color: #ddd;
 }
 
+polygon {
+  fill: #4BB06A;
+}
+
 .header {
   width: 100%;
 }

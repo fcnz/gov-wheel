@@ -17,6 +17,15 @@ var svg = d3.select('.wheel')
 .append('g')
 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
+svg.append('polygon')
+.attr('points', '100,100 -100,100 -100,-100 100,-100');
+
+svg.append('text')
+.attr('text-anchor', 'middle')
+.text(function() {
+  return 'Good Governance';
+});
+
 // Draw arrows to indicate important part of wheel.
 svg.append('polygon')
 .attr('points', '-30,'+-height/2+' 30,'+-height/2+' 0,'+-radius);
