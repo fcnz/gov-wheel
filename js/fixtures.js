@@ -3,37 +3,41 @@ var data = [
     {
       heading: 'Federated (Club)',
       description: 'NSO voting members are the local clubs, with regional entities or committees potentially in existence as service centres (Sport NZ, n.d.).',
-      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).'
+      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).',
+      listName: 'Tasks',
+      list: ['Task 1', 'Task 2']
     },
     {
       heading: 'Unitary',
       description: 'NSO voting members are the individuals, for example, Triathlon NZ, as an events-based organisation, has a structure closely aligned with the unitary model (Sport NZ, n.d.).',
-      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).'
+      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).',
+      listName: 'Tasks',
+      list: ['Task 1', 'Task 2', 'Task 3']
     }
   ],
   [
     {
-      heading: 'Director Selection\n(Delegate)',
+      heading: 'Director Selection (Delegate)',
       description: 'Board composition is determined by the members and/or interest groups exercising their right to delegate someone to represent them on the board (Delegation, n.d.).',
       ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
     },
     {
-      heading: 'Director Selection\n(Elected)',
+      heading: 'Director Selection (Elected)',
       description: 'Board composition is detemoined by the members, collectively, conduct a formal and organized choice by vote (Election, n.d.).',
       ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
     },
     {
-      heading: 'Director Selection\n(Appointed)',
+      heading: 'Director Selection (Appointed)',
       description: 'Board composition is determined by an authorised person/entity assigning the position on the board to someone (Appointment, n.d.).',
       ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
     },
     {
-      heading: 'Director Selection\n(Co-Opted)',
+      heading: 'Director Selection (Co-Opted)',
       description: 'Co-option is the process of appointing someone to the board by invitation of the existing members [of the board] (Co-option, n.d.).',
       ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
     },
     {
-      heading: 'Director Selection\n(Mixed Model)',
+      heading: 'Director Selection (Mixed Model)',
       description: 'Board composition is determined by a mixture of delegation, election, appointment and/or co-option.',
       ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
     }
