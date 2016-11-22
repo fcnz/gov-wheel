@@ -5,7 +5,7 @@ var $wheel = $('.wheel');
 var width = $wheel.width();
 var height = $wheel.height();
 var radius = Math.min(width, height) / 2 - 40;
-var innerRadius = 60;
+var innerRadius = 80;
 var curAngle = 0;
 
 var color = d3.scaleOrdinal().range(['#ff8c00', '#98abc5', '#a05d56', '#8a89a6', '#7b6888', '#6b486b']);
