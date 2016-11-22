@@ -16,7 +16,19 @@ polygon {
   width: 68%;
   bottom: 0;
   top: 0;
-  margin: 95px 0px 40px 13px;
+  margin: 100px 0px 50px 13px;
+}
+
+text {
+  font-size: 16px;
+}
+
+textPath {
+  font-size: 10px;
+}
+
+.list li, p {
+  font-size: 16px;
 }
 
 ul.principals {
@@ -32,7 +44,7 @@ ul.principals {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  padding: 9px 5px;
+  padding: 9px 20px;
   background-color: #4BB06A;
   border-radius: 5px;
   border-color: white;

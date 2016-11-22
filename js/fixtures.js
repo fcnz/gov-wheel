@@ -1,176 +1,58 @@
 var data = [
   [
-    {
-      heading: 'Federated (Club)',
-      description: 'NSO voting members are the local clubs, with regional entities or committees potentially in existence as service centres (Sport NZ, n.d.).',
-      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).',
-      listName: 'Tasks',
-      list: ['Task 1', 'Task 2']
-    },
-    {
-      heading: 'Unitary',
-      description: 'NSO voting members are the individuals, for example, Triathlon NZ, as an events-based organisation, has a structure closely aligned with the unitary model (Sport NZ, n.d.).',
-      ringDescription: 'Functions - "Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling" (Sarafinchan, 2013).',
-      listName: 'Tasks',
-      list: ['Task 1', 'Task 2', 'Task 3']
-    }
+    { ringDescription: "Governance Structure (NZ NSOs) - constitutional relationship between the organisation, the board and the voting members.", heading: "Federated (Traditional)", description: "NSO voting members are the regional sport entities, whose voting members are the clubs, whose voting members, in turn, are the individuals (Sports NZ., n.d.)" },
+    { ringDescription: "Governance Structure (NZ NSOs) - constitutional relationship between the organisation, the board and the voting members.", heading: "Federated (Code)", description: "NSO voting members are code-based sport entities, for example, NZ Canoeing Federation, with canoe slalom, canoe polo, etc. code-based entities as voting members (Sport NZ., n.d.)." },
+    { ringDescription: "Governance Structure (NZ NSOs) - constitutional relationship between the organisation, the board and the voting members.", heading: "Federated (Club)", description: "NSO voting members are the local clubs, with regional entities or committees potentially in existence as service centres (Sport NZ., n.d.)." },
+    { ringDescription: "Governance Structure (NZ NSOs) - constitutional relationship between the organisation, the board and the voting members.", heading: "Unitary", description: "NSO voting members are the individuals, for example, Triathlon NZ, as an events-based organisation, has a structure closely aligned with the unitary model (Sport NZ., n.d.)." }
   ],
   [
-    {
-      heading: 'Director Selection (Delegate)',
-      description: 'Board composition is determined by the members and/or interest groups exercising their right to delegate someone to represent them on the board (Delegation, n.d.).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
-    },
-    {
-      heading: 'Director Selection (Elected)',
-      description: 'Board composition is detemoined by the members, collectively, conduct a formal and organized choice by vote (Election, n.d.).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
-    },
-    {
-      heading: 'Director Selection (Appointed)',
-      description: 'Board composition is determined by an authorised person/entity assigning the position on the board to someone (Appointment, n.d.).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
-    },
-    {
-      heading: 'Director Selection (Co-Opted)',
-      description: 'Co-option is the process of appointing someone to the board by invitation of the existing members [of the board] (Co-option, n.d.).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
-    },
-    {
-      heading: 'Director Selection (Mixed Model)',
-      description: 'Board composition is determined by a mixture of delegation, election, appointment and/or co-option.',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
-    }
+    { ringDescription: "Director Selection Model - the method/s by which NSO board directors are selected.", heading: "DS - Delegate", description: "Board composition is determined by the members and/or interest groups exercising their right to delegate someone to represent them on the board (Delegation, n.d.)." },
+    { ringDescription: "Director Selection Model - the method/s by which NSO board directors are selected.", heading: "DS - Elected", description: "Board composition is detemined by the members, collectively, conducting a \"formal and organized choice by vote\" (Election, n.d.)." },
+    { ringDescription: "Director Selection Model - the method/s by which NSO board directors are selected.", heading: "DS - Appointed", description: "Board composition is determined by an authorised person/entity assigning the position on the board to someone (Appointment, n.d.)." },
+    { ringDescription: "Director Selection Model - the method/s by which NSO board directors are selected.", heading: "DS - Co-Opted", description: "Co-option is the process of appointing someone to the board \"by invitation of the existing members [of the board]\" (Co-option, n.d.)." },
+    { ringDescription: "Director Selection Model - the method/s by which NSO board directors are selected.", heading: "DS - Mixed", description: "Board composition is determined by a mixture of delegation, election, appointment and/or co-option." }
   ],
   [
-    {
-      heading: 'Objective - Oversight',
-      description: 'Encompasses the conformance objective (e.g., monitoring and accountability functions) of the board in achieving its overall aim of good governance (Ferkins & Kilmister, 2012).',
-      ringDescription: 'adsnhj sahgfkjg klgfsduj hsjkdag kldghs jkhagflkag hkljghsd klhasgflk'
-    },
-    {
-      heading: 'Objective - Foresight',
-      description: 'Encompasses the performance objective (e.g., strategic planning function) of the board in achieving its overall aim of good governance (Ferkins & Kilmister, 2012).'
-    },
-    {
-      heading: 'Objective - Insight',
-      description: 'Encompasses the ??? objective (e.g., philosphicial, ethical and critical thinking to predict, understand and resolve complex situations) of the board in achieving its overall aim of good governance (Ferkins & Kilmister, 2012).'
-    }
+    { ringDescription: "Objective - the NSO board aims to achieve the goal of good governance (effective direction and control) by delivering on three key objectives.", heading: "Objective 1 - Oversight", description: "Encompasses the conformance objective (e.g., monitoring and accountability functions) of the board in achieving its overall aim of good governance (Ferkins & Kilmister, 2012)." },
+    { ringDescription: "Objective - the NSO board aims to achieve the goal of good governance (effective direction and control) by delivering on three key objectives.", heading: "Objective 2 - Foresight", description: "Encompasses the performance objective (e.g., strategic planning function) of the board in achieving its overall aim of good governance (Ferkins & Kilmister, 2012)." },
+    { ringDescription: "Objective - the NSO board aims to achieve the goal of good governance (effective direction and control) by delivering on three key objectives.", heading: "Objective 3 - Insight", description: "Encompasses the 'X factor' objective (e.g., deeper level philospohical, ethcial and critical-thinking) required of the board to achieve its goal of good governance - effective direction and control." }
   ],
   [
-    {
-      heading: 'Function - Financial',
-      description: ''
-    },
-    {
-      heading: 'Function - CEO Relationship',
-      description: ''
-    },
-    {
-      heading: 'Function - Stakeholder Relationships',
-      description: ''
-    },
-    {
-      heading: 'Function - ???',
-      description: ''
-    }
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Legal Status Protection", description: "", listName: "Activities", list: [ "Compliance with Incorporated Societies Act 1908.", "Compliance with fiduciary duty to act in best interests of the organisation as a whole." ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "HR Mgmt (F)", description: "Human Resource Management - Foresight", listName: "Activities", list: [ "CEO recruitment/appointment", "CEO support/advice", "Board succession planning", "Board development" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "HR Mgmt (O)", description: "Human Resource Management - Oversight", listName: "Activities", list: [ "CEO performance management", "Board self-assessment", "Board external assessment", "Board committee activities (e.g., audit, remuneration, nomination)." ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Strategic Planning", description: "", listName: "Activities", list: [ "Long term strategic planning", "Long term financial planning", "Approve annual plan & associated budget allocations." ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Resource Management", description: "", listName: "Activities", list: [ "Budget allocations", "Network resources - financial", "Network resources - commercial", "Network resources - political" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Risk Management", description: "", listName: "Activities", list: [ "Organisational performance reviews", "Legal compliance (e.g., employment, health & safety)", "Financial compliance (e.g., monthly reports, annual review/audit)", "Identify & manage other risk items (e.g., integrity, public relations)" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Stakeholder Relationships", description: "", listName: "Activities", list: [ "Member engagement", "Stakeholder engagement", "Enhance organisational public image" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Stakeholder Accountability", description: "", listName: "Activities", list: [ "Report to members (voting)", "Report to other stakeholders" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Policy & Process", description: "Activities include approving & ensuring compliance with:", listName: "Activities", list: [ "Organisational policies", "Board policies", "Board processes" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Mission", description: "Activities include setting & role-modelling organisational:", listName: "Activities", list: [ "Vision", "Mission", "Values", "Culture" ] },
+    { ringDescription: "Functions - \"Business functions are high level events that are then decomposed into finer grained [sub] functions that are then decomposed into processes of activities, that are then broken down into tasks. This is called hierarchical modeling\" (Sarafinchan, 2013).", heading: "Leadership", description: "Activities include providing individual/collective leadership which is:", listName: "Activities", list: [ "Effective Leadership", "Ethical Leadership" ] },
   ],
   [
-    {
-      heading: 'Tasks - Revenue Generation',
-      description: ''
-    },
-    {
-      heading: 'Tasks - Audit Related',
-      description: ''
-    },
-    {
-      heading: 'Tasks - ??? (could be a lot more)',
-      description: ''
-    }
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Agency Theory", description: "\"Principal-agent theory... assumes that the owners of an enterprise (the principal) and those that manage it (the agent) will have different interests... [with] corporate goverance arrangements... [ensuring] that management acts in the best interests of shareholders\" (Cornforth, 2004, p. 14)." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Resource Dependency Theory", description: "RD theory \"views organisations as interdependent with their environment... As a result they need to find ways of managing this dependence and ensuring they get the resources and information they need [to survive]\" (Cornforth, 2004, p. 16)." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Stewardship Theory", description: "\"Stewardship theory... assumes that general managers want to do a good job and will act as effective stewards of an organisation's resources\" (Cornforth, 2004, p. 15)." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Stakeholder Theory", description: "\"Stakeholder theory... is based on the premise that organisations should be responsible to a range of groups (or stakeholders) in society other than just its owners or mandators\" (Cornforth, 2004, p. 17). " },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Stakeowner Theory", description: "Stakeowner theory proposes that organisations recognise a stakeholder hierarchy and make \"efforts to identify, order and establish stakeholder salience or primacy\" (Ferkins & Shilbury, 2015, p. 106) with an associated stakeowner reciprocity/responsibility to the organisation." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Democratic Theory", description: "Democratic theory reflects \"democratic government [as] a central institution in Western societies... the ideas and practices [of which] have influenced the... governance of many types of organisation\" (Cornforth, 2004, p. 14)." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Managerial Hegemony", description: "Theory  MH theory asserts that \"although shareholders may legally own...large corporations they no longer effectively control them... Control having been ceded to a new professional managerial class\" (Cornforth, 2004, p. 18)." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Institutional Theory", description: "Institutional theory suggests that organisations respond to mimetic, normative and coercive pressures to \"conform to prescribed structures and practices to legitimate their existence\" (Kikulis et al., 1995, p. 139)." },
+    { ringDescription: "Governance Theory - Explains the allocation of key functions to, and relationships between, the governance players.", heading: "Collaborative Theory", description: "Collaborative  theory suggests \"policy decision-making and and management that engage people constructively accross the boundaries of... public, private and civic spheres [NSO, member associations and government] in order to carry out [maximise] a public purpose that could not otherwise be accomplished\" (Emerson et al., 2012, p. 3; as cited [applied] by Shilbury et al., 2016, p. 3)." }
   ],
   [
-    {
-      heading: 'Theory - Agency',
-      description: ''
-    },
-    {
-      heading: 'Theory - Resource Dependency',
-      description: ''
-    },
-    {
-      heading: 'Theory - Stewardship',
-      description: ''
-    },
-    {
-      heading: 'Theory - Stakeholder',
-      description: ''
-    },
-    {
-      heading: 'Theory - Stakeowner',
-      description: ''
-    },
-    {
-      heading: 'Theory - Democratic',
-      description: ''
-    },
-    {
-      heading: 'Theory - Managerial Hegemony',
-      description: ''
-    },
-    {
-      heading: 'Theory - Institutional',
-      description: ''
-    },
-    {
-      heading: 'Theory - ???',
-      description: ''
-    }
-  ],
-  [
-    {
-      heading: 'Theory - ???',
-      description: ''
-    },
-    {
-      heading: 'Goverance - Compliance Model',
-      description: 'The main function of the board is to control managers... to ensure [management] acts in the shareholders best interests (Cornforth, 2004, p. 14). '
-    },
-    {
-      heading: 'Governace - Partnership Model',
-      description: 'The main function of the board is ... to improve organisational performance...to work with management to improve strategy and add value to top decisions (Cornforth, 2004, p. 15).'
-    },
-    {
-      heading: 'Goverance - Democratic Model',
-      description: 'The main function of the board is to resolve or choose between the interests of different groups and set the overall policy of the organisation, which can then be implemented by staff (Cornfirth, 2004, p. 14).'
-    },
-    {
-      heading: 'Goverance - Stakeholder Model',
-      description: 'The main function of the board is political,  negotiating and resolving the potentially conflicting interests of different stakeholder groups in order to determine the objectives of the organisation and set policy (Cornforth, 2004, p. 17).'
-    },
-    {
-      heading: 'Governance - Co-optation Model',
-      description: 'The main functions of the board are to maintain good relations with key external stakeholders in order to ensure the flow of resources..., and to help the organsition respond to external change (Cornforth, 2004, pp. 16, 17).'
-    },
-    {
-      heading: 'Governance - \'Rubber stamp\' Model',
-      description: 'The board\'s function is essentially symbolic to give legitimacy to managerial actions (Cornforth, 2004, p. 18).'
-    },
-    {
-      heading: 'Governance - ??? ',
-      description: ''
-    },
-    {
-      heading: 'Governance - ???',
-      description: ''
-    },
-    {
-      heading: 'Governance - Contingency Model',
-      description: ''
-    },
-    {
-      heading: 'Governance - Paradox Approach',
-      description: 'The board is required to manage the complex and paradoxical relationship between boards and senior managers... through [ongoing] explicit discussion and negotiation over roles and responsibilities (Cornforth, 2004, p. 26). '
-    }
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Compliance Model", description: "The \"main function of the board is to control managers... to ensure [management] acts in the shareholders' best interests\" (Cornforth, 2004, p. 14).  Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Partnership Model", description: "The \"main function of the board is ... to improve organisational performance...to work with management to improve strategy and add value to top decisions\" (Cornforth, 2004, p. 15). Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Democratic Model", description: "The main function of the board \"is to resolve or choose between the interests of different groups and set the overall policy of the organisation, which can then be implemented by staff\" (Cornforth, 2004, p. 14). Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Stakeholder Model", description: "The main function of the board is political, \" negotiating and resolving the potentially conflicting interests of different stakeholder groups in order to determine the objectives of the organisation and set policy\" (Cornforth, 2004, p. 17).  Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Co-optation Model", description: "The \"main functions of the board are to maintain good relations with key external stakeholders in order to ensure the flow of resources..., and to help the organisation respond to external change\" (Cornforth, 2004, pp. 16, 17).  Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Rubber stamp' Model", description: "The board's function \"is essentially symbolic to give legitimacy to managerial actions\" (Cornforth, 2004, p. 18).  Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Traditional Model", description: "The \"work is done by the staff, the administration by management and the policy making by the board\" (Fletcher, 1999; as cited by Hoye et al., 2012, p. 232) Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Carver Policy Model ", description: "The board is focussed on \"desired outcomes, rather than... detail... and it 'clearly subordinates the CEO to the board and expects the board alone to set the parameters of the relationship'\" (Carver, 1997; Fletcher, 1999; as cited by Hoye et al. 2012, p. 232).  Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Executive Led Model", description: "The \"ulitmate responsibility for the performance of a nonprofit organization, including its governance, should rest with the executive\" (Drucker, 1990; as cited by Hoye et al., 2012, p. 232).  Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Collaborative Network Model", description: "A collaborative network is descibed as \"a culture of successful governance via cooperation and ongoing collaboration between entities [NSOs and member associations] comprising these systems [information, resource, activity and capabilities]\" (Shilbury et al., 2016).   Governance Players  Player 1 - Voting Members Player 2 - Board  Player 3 - Staff  Player 4 - Other Stakeh" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Contingency Approach", description: "The \"alignment of the organization's governance configuration with its structure and [external] environment\" (Bradshaw, 2009, p. 61)" },
+    { ringDescription: "Governance Model - Decribes the allocation of key functions to, and relationships between, the governance players.", heading: "Paradox Approach", description: "The board is required to manage the \"complex and paradoxical relationship between boards and senior managers... through [ongoing] explicit discussion and negotiation over roles and responsibilities\" (Cornforth, 2004, p. 26)." }
   ]
 ];

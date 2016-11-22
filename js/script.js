@@ -24,8 +24,12 @@ var svg = d3.select('.wheel')
 .append('g')
 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
-svg.append('polygon')
+var centreTitle = svg.append('polygon')
 .attr('points', '100,100 -100,100 -100,-100 100,-100');
+
+centreTitle.on('click', function() {
+  $('.ring-description').text("Governance - the \"system by which [organisations] are directed and controlled\" (Cadbury Committee, 1992, para. 2.5).");
+});
 
 svg.append('text')
 .attr('text-anchor', 'middle')
